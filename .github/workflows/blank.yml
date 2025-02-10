@@ -56,5 +56,5 @@ jobs:
 
       - name: Execute Task
         run: |
-          echo "Triggered by Main Repository - Repo1!"
+          echo "Triggered by Main Repository - Rep"
           # Add your custom actions here (e.g., build, deploy, etc.)
