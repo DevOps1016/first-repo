@@ -40,6 +40,23 @@
 
 
 
+# on: [push]
+# jobs:
+#   dispatch:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/github-script@v6
+#       with:
+#         github-token: ${{ secrets.PAT_TOKEN }}
+#         script: |
+#           await github.rest.actions.createWorkflowDispatch({
+#             owner: 'multi-branch-pipelines',
+#             repo: 'first-repo',
+#             workflow_id: 'blank.yml',
+#             ref: 'main'
+#           })
+
+
 name: Respond to Trigger from Main Repo
 
 on:
